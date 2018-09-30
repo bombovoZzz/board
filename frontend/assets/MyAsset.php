@@ -11,6 +11,9 @@ use yii\web\AssetBundle;
 
 class MyAsset extends AssetBundle {
 
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
+
     public $css = [
     	'css/reset.css',
         'css/header.css'
