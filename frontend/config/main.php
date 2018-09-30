@@ -11,6 +11,10 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'defaultRoute' => 'posts',
+    'layout' => 'mymain',
+    'language' => 'ru',
+    'timeZone' => 'Europe/Moscow',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -41,7 +45,6 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                // '<action>' => 'site/<action>'
             ],
         ],
     ],
