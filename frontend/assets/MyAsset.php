@@ -15,8 +15,18 @@ class MyAsset extends AssetBundle {
     public $baseUrl = '@web';
 
     public $css = [
-    	'css/reset.css',
+    	'css/libs.css',
         'css/header.css'
+    ];
+
+    // public $js = [
+    // 	''
+    // ];
+    public $depends = [
+    	'yii\web\JqueryAsset'
+        // 'yii\web\YiiAsset',
+        // 'yii\bootstrap\BootstrapAsset',
+
     ];
 
 }
