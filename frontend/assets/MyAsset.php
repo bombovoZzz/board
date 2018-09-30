@@ -12,7 +12,8 @@ use yii\web\AssetBundle;
 class MyAsset extends AssetBundle {
 
     public $css = [
-        'css/style.css'
+    	'css/reset.css',
+        'css/header.css'
     ];
 
 }
