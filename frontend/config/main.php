@@ -12,7 +12,7 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'posts',
-    'layout' => 'mymain',
+    'layout' => 'main',
     'language' => 'ru',
     'timeZone' => 'Europe/Moscow',
     'components' => [

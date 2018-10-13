@@ -1,83 +1,67 @@
-<?php
+	<?php
+    use frontend\assets\MainAssets;
 
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
-use common\widgets\Alert;
-
-AppAsset::register($this);
+    MainAssets::register($this);
 ?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
+
+<?php $this->beginPage()?>
+<!doctype html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dealland</title>
+    <?php $this->head()?>
 </head>
-<body>
 <?php $this->beginBody() ?>
+<body>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+<!-- header -->
+<header class="header" id="header-js">
+	<div class="header-wrap">
+		<a href="#">
+			<div class="header__logo">
+				<h2>dealland.ru</h2>
+				<p>Место реальных сделок</p>
+			</div>
+		</a>
+		<div class="header__search">
+			<form>
+				<input type="text" placeholder="Поиск обьявлений ...">
+			</form>
+			<i class="icon-search"></i>
+		</div>
+		<div class="header__btn">
+			<div class="header__btn-add">
+				<i class="icon-add"></i>
+				<p>Подать обьявление</p>
+			</div>
+			<div class="header__btn-user">
+				<i class="icon-user"></i>
+				<p id="user-input">Вход</p>
+				<p id="user-profile">Профиль</p>
+				<i class="icon-arow-down"></i>
+			</div>
+		</div>
+	</div>
+</header>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
+<!-- crumbs -->
+<div class="crumbs" id="crumbs-js">
+	<a href="#">Главная</a>
+	<a href="#">/ Город</a>
+	<a href="#">/ Категория</a>
+	<a href="#">/ Название объявления</a>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+<?= $content?>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
 
-<?php $this->endBody() ?>
+
+
 </body>
+<?php $this->endBody()?>
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage()?>

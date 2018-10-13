@@ -185,6 +185,33 @@
   display: none !important;
 }
 
+.crumbs {
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 30px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 21px;
+}
+
+.crumbs a {
+  font: 14px/25px "RobotoRegular";
+  color: #5e7074;
+  letter-spacing: -.12px;
+  white-space: nowrap;
+}
+
+.crumbs a:hover {
+  color: #3c474a;
+}
+
 @media screen and (max-width: 992px) {
   .header-wrap {
     -webkit-flex-wrap: wrap;

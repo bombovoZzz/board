@@ -9,7 +9,7 @@
 namespace frontend\assets;
 use yii\web\AssetBundle;
 
-class MyAsset extends AssetBundle {
+class MainAssets extends AssetBundle {
 
     public $basePath = '@webroot';
     public $baseUrl = '@web';
@@ -17,7 +17,7 @@ class MyAsset extends AssetBundle {
     public $css = [
         'css/fonts.css',
     	'css/libs.css',
-        'css/header.css'
+        'css/main.css'
     ];
 
     // public $js = [
