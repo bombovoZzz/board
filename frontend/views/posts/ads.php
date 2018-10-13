@@ -1,6 +1,6 @@
 <div class="advertise" id="advertise-js">
 	<div class="advertise__block">
-		<a  href="#" class="advertise__block-img">
+		<a  href="/test" class="advertise__block-img">
 			<img src="img/test1.jpg" alt="img">
 			<img src="img/minislide2.jpg" alt="img">
 			<img src="img/minislide1.jpg" alt="img">
