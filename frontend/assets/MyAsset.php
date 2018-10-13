@@ -15,6 +15,7 @@ class MyAsset extends AssetBundle {
     public $baseUrl = '@web';
 
     public $css = [
+        'css/fonts.css',
     	'css/libs.css',
         'css/header.css'
     ];

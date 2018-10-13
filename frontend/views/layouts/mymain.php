@@ -31,16 +31,18 @@
 			<form>
 				<input type="text" placeholder="Поиск обьявлений ...">
 			</form>
-			<img src="img/icon/search-icon.png" alt="search">
+			<i class="icon-search"></i>
 		</div>
 		<div class="header__btn">
 			<div class="header__btn-add">
-				<img src="img/icon/add-icon.png" alt="add">
+				<i class="icon-add"></i>
 				<p>Подать обьявление</p>
 			</div>
 			<div class="header__btn-user">
-				<img src="img/icon/user-icon.png" alt="user">
-				<p>Вход</p>
+				<i class="icon-user"></i>
+				<p id="user-input">Вход</p>
+				<p id="user-profile">Профиль</p>
+				<i class="icon-arow-down"></i>
 			</div>
 		</div>
 	</div>

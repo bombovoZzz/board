@@ -151,3 +151,176 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  background: #edeef0;
+  padding: 0 10px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e900";
+}
+
+.icon-animal:before {
+  content: "\e901";
+}
+
+.icon-arow-down:before {
+  content: "\e902";
+}
+
+.icon-arrow-up:before {
+  content: "\e903";
+}
+
+.icon-check:before {
+  content: "\e904";
+}
+
+.icon-clothes:before {
+  content: "\e905";
+}
+
+.icon-email:before {
+  content: "\e906";
+}
+
+.icon-football:before {
+  content: "\e907";
+}
+
+.icon-handshake:before {
+  content: "\e908";
+}
+
+.icon-holiday:before {
+  content: "\e909";
+}
+
+.icon-house:before {
+  content: "\e90a";
+}
+
+.icon-layers:before {
+  content: "\e90b";
+}
+
+.icon-like-empty:before {
+  content: "\e90c";
+}
+
+.icon-like-full:before {
+  content: "\e90d";
+}
+
+.icon-lock:before {
+  content: "\e90e";
+}
+
+.icon-logout:before {
+  content: "\e90f";
+}
+
+.icon-monitor:before {
+  content: "\e910";
+}
+
+.icon-other:before {
+  content: "\e911";
+}
+
+.icon-place:before {
+  content: "\e912";
+}
+
+.icon-plant:before {
+  content: "\e913";
+}
+
+.icon-pram:before {
+  content: "\e914";
+}
+
+.icon-search:before {
+  content: "\e915";
+}
+
+.icon-sett:before {
+  content: "\e916";
+}
+
+.icon-settings:before {
+  content: "\e917";
+}
+
+.icon-sort .path1:before {
+  content: "\e918";
+  color: #1e201d;
+}
+
+.icon-sort .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: black;
+}
+
+.icon-sort .path3:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: black;
+}
+
+.icon-sort .path4:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: black;
+}
+
+.icon-sort .path5:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: black;
+}
+
+.icon-table:before {
+  content: "\e91d";
+}
+
+.icon-tools:before {
+  content: "\e91e";
+}
+
+.icon-transport:before {
+  content: "\e91f";
+}
+
+.icon-type-of-deal:before {
+  content: "\e920";
+}
+
+.icon-user:before {
+  content: "\e921";
+}
+
+.icon-work:before {
+  content: "\e922";
+}
+
+.icon-game-controller:before {
+  content: "\e923";
+}
