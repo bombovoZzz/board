@@ -57,4 +57,4 @@
 </div>
 
 
-<?= $this->registerJsFile('@web/js/ads.js', $options = ['depends' => 'frontend\assets\MainAssets'])?>
+<?//= $this->registerJsFile('@web/js/ads.js', $options = ['depends' => 'frontend\assets\MainAssets'])?>
