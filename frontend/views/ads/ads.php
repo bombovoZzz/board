@@ -9,7 +9,7 @@
 		<div class="ads__block-text">
 			<div class="ads-vip-line"></div>
 			<div class="ads-vip">
-				<p>vip</p>
+				<p></p>
 			</div>
 			<h3>
 				<a href="#">Продам Беху, заебала...</a>
