@@ -12,6 +12,7 @@ use yii\web\Controller;
 class AdsController extends Controller {
 
     public function actionIndex () {
+
         return $this->render('index');
     }
 
