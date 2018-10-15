@@ -11,8 +11,8 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'defaultRoute' => 'posts',
-    'layout' => 'mymain',
+    'defaultRoute' => 'ads',
+    'layout' => 'main',
     'language' => 'ru',
     'timeZone' => 'Europe/Moscow',
     'components' => [
