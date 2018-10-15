@@ -56,7 +56,9 @@
 	<a href="#">/ Название объявления</a>
 </div>
 
-<?= $content?>
+<div id="main-content-id-js">
+	<?= $content?>	
+</div>
 
 
 

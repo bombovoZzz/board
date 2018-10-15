@@ -354,17 +354,6 @@
 			<?= $this->renderAjax('ads')?>
 		<!-- /.advertise block-->
 
-		<!-- pagination block -->
-		<div class="pagination" id="pagination-js">
-			<div class="pagination__content">
-				<span class="pagination-prev">Пред.</span>
-				<div id="pagination__item-js">
-					
-				</div>
-				<span class="pagination-next">След.</span>
-			</div>
-		</div>
-		<!-- /.pagination -->
 
 	</div>
 	<!-- /.content -->
@@ -380,6 +369,17 @@
 
 
 </section>
+		<!-- pagination block -->
+		<div class="pagination" id="pagination-js">
+			<div class="pagination__content">
+				<span class="pagination-prev">Пред.</span>
+				<div id="pagination__item-js">
+					
+				</div>
+				<span class="pagination-next">След.</span>
+			</div>
+		</div>
+		<!-- /.pagination -->
 <!-- /.main-content -->
 
 <?php 
