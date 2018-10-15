@@ -9,7 +9,7 @@
 namespace frontend\controllers;
 use yii\web\Controller;
 
-class PostsController extends Controller {
+class AdsController extends Controller {
 
     public function actionIndex () {
         return $this->render('index');
