@@ -152,11 +152,6 @@ a {
   box-sizing: border-box;
 }
 
-body {
-  background: #edeef0;
-  padding: 0 10px;
-}
-
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

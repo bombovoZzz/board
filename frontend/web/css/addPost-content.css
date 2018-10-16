@@ -1,0 +1,126 @@
+.addPost-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addPost {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 900px;
+  -ms-flex: 0 1 900px;
+  flex: 0 1 900px;
+}
+
+.addPost h4 {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font: 20px RobotoCondensed-Bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #5e7074;
+}
+
+.addPost__form {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.addPost__form > div {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.addPost__form label {
+  font: 18px RobotoCondensed-Regular;
+  color: #5e7074;
+  margin-right: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 190px;
+  -ms-flex: 0 1 190px;
+  flex: 0 1 190px;
+}
+
+.addPost__form input,
+.addPost__form select {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  outline: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.addPost__form input:hover,
+.addPost__form input:focus,
+.addPost__form select:hover,
+.addPost__form select:focus {
+  border-color: #039ad3;
+}
+
+.addPost__form input {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 2 60%;
+  -ms-flex: 0 2 60%;
+  flex: 0 2 60%;
+}
+
+.addPost__form select {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 2 47.5%;
+  -ms-flex: 0 2 47.5%;
+  flex: 0 2 47.5%;
+}
+
+.addPost__form button {
+  border: none;
+  background: #039ad3;
+  color: #fff;
+  min-width: 92px;
+  height: 30px;
+  font: 18px OpenSansCondensed-Light;
+  padding-bottom: 5px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.addPost__form button:hover {
+  background: #00a3e0;
+}
+
+#addPost-submit {
+  margin: 10px auto;
+  padding: 0 40px;
+  display: block;
+}

@@ -2,6 +2,8 @@
 /yii
 /yii_test
 /yii_test.bat
+/frontend/gulp
+/frontend/web/sass
 
 # phpstorm project files
 .idea
