@@ -255,7 +255,7 @@
 				<div class="filters__category">
 					<p>
 						<i class="icon-place"></i>
-						Город: <span id="city-span">Луганская обл.</span>
+						Город: <span id="city-span"></span>
 					</p>
 					<i class="icon-arow-down"></i>
 				</div>
@@ -288,32 +288,36 @@
 			
 			<!-- filters open -->
 			<div class="filters-open">
-				<div class="filters-wrap">
+				<div class="filters-wrap" id="filters-city-js">
 					<p>Выберите ваш город</p>
-						Луганская обл.
-						Красный луч
-						Ровеньки
-						Луганск
-						Антрацит
-						Лутугино
-						Свердловск
-						Красный партизан
-						Луганская обл.
-						Красный луч
-						Ровеньки
-						Луганск
-						Антрацит
-						Лутугино
-						Свердловск
-						Красный партизан
-						Луганская обл.
-						Красный луч
-						Ровеньки
-						Луганск
-						Антрацит
-						Лутугино
-						Свердловск
-						Красный партизан
+					<div class="filters-city">
+						<a href="#">Луганская обл.</a>
+						<a href="#">Красный луч</a>
+						<a href="">Ровеньки</a>
+						<a href="">Антрацит</a>
+						<a href="">Красный партизан</a>
+					</div>
+					<div class="filters-city">
+						<a href="#">Луганская обл.</a>
+						<a href="#">Красный луч</a>
+						<a href="">Ровеньки</a>
+						<a href="">Антрацит</a>
+						<a href="">Красный партизан</a>
+					</div>
+					<div class="filters-city">
+						<a href="#">Луганская обл.</a>
+						<a href="#">Красный луч</a>
+						<a href="">Ровеньки</a>
+						<a href="">Антрацит</a>
+						<a href="">Красный партизан</a>
+					</div>
+					<div class="filters-city">
+						<a href="#">Луганская обл.</a>
+						<a href="#">Красный луч</a>
+						<a href="">Ровеньки</a>
+						<a href="">Антрацит</a>
+						<a href="">Красный партизан</a>
+					</div>
 				</div>
 			</div>
 

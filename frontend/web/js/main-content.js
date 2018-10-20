@@ -62,10 +62,7 @@ $(document).ready(function () {
 			headerHeight = $('#header-js').outerHeight(true),
 			menu = $('#menu-js').children(),//  позиционирование блока menu
 			filters = $('#filters-js'),// позиционирование блока filters
-			filtersHeight = filters.outerHeight(true), 
-			filtersContent = $('.filters-content'),// позиционирование блока filtersContent 
 			description = $('.description-wrap'),
-			menuTop = menu.offset().top,
 			gapTop = 10,
 			flag = true;
 
@@ -126,7 +123,6 @@ $(document).ready(function () {
 				spase = / /g,
 				comma = /,/g,
 				way = textA.trim().replace(comma, '').replace(spase, '_');
-				console.log(way);
 		});
 
 		// функция деактивации классов
@@ -199,15 +195,15 @@ $(document).ready(function () {
 		
         var filters = $('#filters-js'),
             category = filters.children(),
-            categoryI = category.children('i'),
             filtersOpen = $('.filters-open'),
             filtersWrap = filtersOpen.children();
-
+				
         // функция меняющая активные классы в filters и filters-open
         function filtersActive(element) {
             
-            var index = element.index();// узнаем индекс element
-
+            var index = element.index(),// узнаем индекс element
+								filtersWrapHeight = filtersWrap.eq(index).outerHeight(true);//полная высота блока wrap 
+								
             // когда при клике блок filters находиться в position: fixed
 	        if (filters.css('position') == 'fixed') {
 	        	$('html, body').animate({// прокручиваем скролл всей страницы на вверх
@@ -217,26 +213,39 @@ $(document).ready(function () {
 	        		return;// выходим из функции, чтобы не закрыть этот активный блок
 	        	}
 	        }
-	        
+					
+					// функция меняющая высоту контент фильтров 
+					function heightAnimate(index, size) {// два обезательных параметра первый index к которому будет обращаться функция и размер на который нужно изметь 
+						filtersOpen.eq(index).animate({
+									height: size
+								}, 500);
+					};
             // запускаем цикл на удаление всех активных классов кроме того на котором кликнули
             for (var i = 0; i < category.length; i++) {
                 if (i == index) {// проверка если i совпадает с индексом 
                     continue;// тогда пропускаем удаление активных классов у этого элемента
                 }
                 category.eq(i).removeClass('filters__category-active');// удаление активных классов у элементов filters__category
-                filtersOpen.eq(i).removeClass('filters-open-active');// удаление активных классов у элементов filters-open
-            }
-
-            element.toggleClass('filters__category-active');// изменяем классы с активного на неактивный и наоборот
-            filtersOpen.eq(index).toggleClass('filters-open-active');// изменяем классы с активного на неактивный и наоборот
-
-        };
+								heightAnimate(i,0);// удаляем у всех контент блоков высоту
+						}
+						
+						element.toggleClass('filters__category-active');// изменяем классы с активного на неактивный и наоборот
+						if(!element.hasClass('filters__category-active')) {// елсли блок активен, тогда при клике на нем
+							heightAnimate(index,0);// делаем высоту этого блока - 0
+						} else{// если не активен блок
+							heightAnimate(index,filtersWrapHeight);// тогда задаем высоту блока 
+						}
+						// единожды вызываем функцию при resize окна, которая скрывает активный класс и делаем высоту контент фильтров - 0
+						$(window).one('resize', function () {
+							category.eq(index).removeClass('filters__category-active');// удаление активных классов у элементов filters__category
+							heightAnimate(index,0);// задаем высоту контент блока - 0
+						});
+				};
 
         // по клику на элемент запускаем функцию filtersActive с передачей аргумента (обьекта на который кликнули(this)) 
         category.click(function () {
             filtersActive($(this));
         });	
-
 
 	});
 	// end filters
@@ -244,44 +253,26 @@ $(document).ready(function () {
     // работа с формами
     $(function () {
         
-        var dealSpan = $('#deal-span'),
-            sortingSpan = $('#sorting-span'),
-            citySpan = $('#city-span'),
-            cityBtn = $('#city-btn');
+        var sortingSpan = $('#sorting-span'),
+						cityA = $('#filters-city-js').find('a'),
+						citySpan = $('#city-span');
 
         // filters data
         // --------------------------------------------------------
-        var dataFilter = {
-            city: 'all',
-            deal: 'selling',
-            sorting: 'date'
-        };
 
-        cityBtn.click(function () {
-            var city = $('#city').val();
-            dataFilter.city = city;
+        cityA.click(function (event) {
+						event.preventDefault();
+            var city = $(this).text();
             citySpan.text(city);
-        });
-
-        $('#deal input').on('change', function() {
-           if ($('#sale').is(':checked')) {
-            dataFilter.deal = 'selling';
-            dealSpan.text('Продажа');
-           } else{
-            dataFilter.deal = 'buy';
-            dealSpan.text('Покупка');
-           }
-        });
+				});
+				cityA.eq(0).click();
 
         $('#sorting input').on('change', function() {
            if ($('#sorting-date').is(':checked')) {
-            dataFilter.sorting = 'date';
             sortingSpan.text('дате');
            } else if ($('#sorting-price-up').is(':checked')) {
-            dataFilter.sorting = 'priceUp';
             sortingSpan.html('цене &uarr;');
            } else {
-            dataFilter.sorting = 'priceDown';
             sortingSpan.html('цене &darr;');
            }
         });
