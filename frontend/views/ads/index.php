@@ -225,8 +225,6 @@
 					<li><a href="#">Фото и видеосъемка</a></li>
 					<li><a href="#">Юридические услуги</a></li>
 					<li><a href="#">Туристические услуги</a></li>
-					<li><a href="#">Услуги для торжеств</a></li>
-					<li><a href="#">Прочие услуги</a></li>
 				</ul>
 			</li>
 			<li class="list">
@@ -274,15 +272,6 @@
 			
 				<div class="filters__category">
 					<p>
-						<i class="icon-type-of-deal"></i>
-						Тип сделки: <span id="deal-span">продажа</span>
-					</p>
-					<i class="icon-arow-down"></i>
-				</div>
-				<!-- /.filters__category -->
-			
-				<div class="filters__category">
-					<p>
 						<i class="icon-settings"></i>Сортировать по: <span id="sorting-span">дате</span>
 					</p>
 					<i class="icon-arow-down"></i>
@@ -301,35 +290,36 @@
 			<div class="filters-open">
 				<div class="filters-wrap">
 					<p>Выберите ваш город</p>
-					<select id="city">
-						<option>Луганская обл.</option>
-						<option>Красный луч</option>
-						<option>Ровеньки</option>
-						<option>Луганск</option>
-						<option>Антрацит</option>
-						<option>Лутугино</option>
-						<option>Свердловск</option>
-						<option>Красный партизан</option>
-					</select>
-					<button id="city-btn">Выбрать</button>
+						Луганская обл.
+						Красный луч
+						Ровеньки
+						Луганск
+						Антрацит
+						Лутугино
+						Свердловск
+						Красный партизан
+						Луганская обл.
+						Красный луч
+						Ровеньки
+						Луганск
+						Антрацит
+						Лутугино
+						Свердловск
+						Красный партизан
+						Луганская обл.
+						Красный луч
+						Ровеньки
+						Луганск
+						Антрацит
+						Лутугино
+						Свердловск
+						Красный партизан
 				</div>
 			</div>
 
 			<div class="filters-open">
 				<div class="filters-wrap">
 					<p>Уточните данные для более эффективного поиска</p>
-				</div>
-			</div>
-
-			<div class="filters-open">
-				<div class="filters-wrap">
-					<p>Выберите тип сделки</p>
-					<form id="deal">
-						<input type="radio" id="sale" name="deal" checked>
-						<label for="sale">Продажа</label>
-						<input type="radio" id="buy" name="deal" >
-						<label for="buy">Покупка</label>
-					</form>
 				</div>
 			</div>
 

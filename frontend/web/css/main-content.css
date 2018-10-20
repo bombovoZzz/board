@@ -101,11 +101,11 @@
   padding: 0 10px;
   white-space: nowrap;
   font-size: 14px;
+  line-height: 27px !important;
 }
 
 .list__nested a:hover {
-  background: #039ad3;
-  color: #fff;
+  color: #039ad3;
 }
 
 .list__href-active span {
@@ -736,6 +736,20 @@ span.pagination-prev {
 
 span.pagination-next {
   border-right: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .list {
+    height: 32px;
+  }
+
+  .list a {
+    line-height: 32px;
+  }
+
+  .list__href i {
+    font-size: 19pt;
+  }
 }
 
 @media screen and (max-width: 1200px) {
